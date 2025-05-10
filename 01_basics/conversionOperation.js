@@ -11,5 +11,14 @@
 // console.log("1" + 2 + 2);
 // console.log(1 + 2 + "2");
 
-console.log(+true);
+// console.log(+true);
+
+let a = 4;
+let b = a++;
+console.log(`a:${a}, b:${b}`);
+
+let c = 5;
+let d = ++c;
+console.log(`c:${c}, d:${d}`);
+
 
