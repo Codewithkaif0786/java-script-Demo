@@ -14,3 +14,6 @@ cityName = "Delhi";
 
 console.table([accountName, accountNum, accountPass, cityName]);
 
+
+// prefer not use var because inside var facing problem it is not block scope 
+
