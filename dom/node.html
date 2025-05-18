@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>learning js</title>
+    <style>
+        .main {
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="main">
+    
+    <script>
+        let div = document.createElement('div');
+        console.log(div);
+        div.className = "main1";
+        div.id =Math.round( Math.random()*10+1);
+        div.setAttribute("title", "random-title");
+        div.style.backgroundColor = 'green';
+        //div.innerText = 'kaif & hera';
+        let addTest = document.createTextNode('kaif & hera');
+        div.appendChild(addTest);
+        document.body.appendChild(div);
+    </script>
+</body>
+</html>
