@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>learning js</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <div class="language">
+        <li>Javascript</li>
+    </div>
+    <script>
+        function addLang(langName) {
+            let li = document.createElement('li');
+            li.innerHTML = `${langName}`;
+            document.querySelector('.language').appendChild(li);
+        }
+        addLang("java")
+        addLang("TypeScript")
+
+        function optimizedLang(langName) {
+                let li = document.createElement('li');
+                li.appendChild(document.createTextNode(langName));
+                document.querySelector('.language').appendChild(li);
+            }
+            optimizedLang("python");
+
+
+            //edit
+            let secondLang = document.querySelector("li:nth-child(2)");
+            //secondLang.innerHTML = "hello"
+            let newLi = document.createElement('li');
+            newLi.textContent= "go"
+            secondLang.replaceWith(newLi);
+
+            //edit
+            let firstLang = document.querySelector("li:first-child");
+            firstLang.outerHTML = '<li>css</li>';
+
+
+            //remove
+
+            let lastLang = document.querySelector('li:last-child');
+            lastLang.remove();
+    </script>
+</body>
+</html>
